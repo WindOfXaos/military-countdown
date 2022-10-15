@@ -1,0 +1,129 @@
+body,
+html {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    list-style-type: none;
+    padding: 0;
+    z-index: 15;
+    margin: 5px;
+    gap: 5px;
+}
+
+.icon {
+    background-color: var(--clock-type-color);
+    border-radius: 5px;
+}
+
+#container {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+    /* background */
+    background: var(--image-url);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+}
+
+/* particlejs */
+#container>.particles-js-canvas-el {
+    position: absolute;
+    pointer-events: none;
+}
+
+/* glitch-img */
+.glitch-img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.wrapper {
+    display: grid;
+    width: 80vw;
+    place-items: center;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    align-self: flex-end;
+}
+
+.text {
+    display: grid;
+    place-items: center;
+    gap: 10px;
+
+    font-size: 3vw;
+    color: rgb(255, 255, 255);
+    align-self: flex-start;
+    font-family: monospace;
+}
+
+.user {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user>img {
+    height: 10vw;
+    border-radius: 100px;
+    box-shadow: 0 0 0 1px rgb(47, 79, 79);
+}
+
+.user>span {
+    font-size: 2vw;
+    font-weight: 600;
+    color: var(--link-color);
+    font-family: monospace;
+}
+
+.user:hover>span {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        grid-auto-rows: minmax(0, 1fr);
+        grid-auto-flow: row;
+    }
+
+    .text {
+        font-size: 5vh;
+        align-self: unset;
+        grid-auto-flow: row;
+        text-align: center;
+        font-size: 6vw;
+    }
+
+    .user>img {
+        height: 20vw;
+    }
+
+    .user>span {
+        font-size: 4vw;
+    }
+
+}

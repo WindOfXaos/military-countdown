@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/fontstylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="icon" href="assets/icons/favicon.ico">
+    <title>Military Countdown</title>
+    <!-- CDN scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/mgGlitch@master/src/mgGlitch.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <!-- configs -->
+    <script src="assets/configs/config.js" defer></script>
+    <!-- local scripts -->
+    <script type="module" src="js/index.js" defer></script>
+    <!-- web components -->
+    <script src="js/components/Clock.js" defer></script>
+</head>
+
+<body>
+    <ul class="icons">
+        <li class="icon" id="sound">
+            <img src="assets/icons/sound-on.svg" alt="sound-on" />
+        </li>
+        <li class="icon" id="animation">
+            <img src="assets/icons/animation.svg" alt="animation" />
+        </li>
+    </ul>
+    <div id="container" class="glitch-img">
+        <div class="wrapper">
+            <clock-item type="days"></clock-item>
+            <clock-item type="hours"></clock-item>
+            <clock-item type="minutes"></clock-item>
+            <clock-item type="seconds"></clock-item>
+        </div>
+        <div class="text" id="text"></div>
+    </div>
+</body>
+
+</html>

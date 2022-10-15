@@ -1,0 +1,37 @@
+.clock {
+    display: grid;
+    place-items: center;
+    color: var(--clock-text-color);
+    padding: 10vh 0 10vh 0;
+}
+
+#timer {
+    font-size: 15vw;
+    font-family: var(--font-name);
+    font-weight: bolder;
+    text-shadow: var(--text-shadow);
+    z-index: 1;
+}
+
+#type {
+    font-family: var(--font-name);
+    position: absolute;
+    font-weight: bolder;
+    font-size: 30vw;
+    color: var(--clock-type-color);
+    mix-blend-mode: difference;
+}
+
+@media (max-width: 480px) {
+    #timer {
+        font-size: 30vw;
+    }
+
+    #type {
+        font-size: 41vw;
+    }
+
+    .clock {
+        padding: 2vh 0 2vh 0;
+    }
+}
