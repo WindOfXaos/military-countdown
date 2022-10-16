@@ -3,10 +3,12 @@
 Let others know how much time is left in your service at ease without having to calculate it yourself with this eye-catching-blazingly-fast-webpage!
 
 <p align="center">
-  <img src="" style="display:inline-block; width: 40%" alt="Screenshots">
-  <img src="" style="display:inline-block; width: 11.5%" alt="Screenshots"><br>
-  <img src="" style="display:inline-block; width: 40%" alt="Screenshots">
-  <img src="" style="display:inline-block; width: 11.5%" alt="Screenshots"><br>
+  <img src="https://user-images.githubusercontent.com/52869398/196017225-988eae76-ee06-4dbd-a14f-ee93a0152546.jpeg" style="display:inline-block; width: 70%" alt="Screenshots">
+  <img src="https://user-images.githubusercontent.com/52869398/196017243-cd39fb7f-2f3e-4f8a-85d4-8b8a66826fe8.jpeg" style="display:inline-block; width: 20%" alt="Screenshots"><br>
+  <i>-Interior Department</i><br><br>
+  <img src="https://user-images.githubusercontent.com/52869398/196017254-8f5a2eb9-c980-49c7-bbd6-53a902d23ba0.jpeg" style="display:inline-block; width: 70%" alt="Screenshots">
+  <img src="https://user-images.githubusercontent.com/52869398/196017269-6903949d-3697-4a91-b868-c3e68fb2c5ad.jpeg" style="display:inline-block; width: 20%" alt="Screenshots"><br>
+  <i>-Defense Department</i><br><br>
   <a href="https://windofxaos.github.io/military-countdown">Live Preview</a>
 </p>
 
@@ -41,7 +43,6 @@ const config = {
 ```
 └───root
     │   index.html
-    │   README.md
     │   
     ├───assets
     │   ├───audio
